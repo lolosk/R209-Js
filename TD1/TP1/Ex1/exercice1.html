@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="style.css">
+  <title>Exercice 1</title>
+ </head>
+ <body>
+
+    <h1>TP1 R209</h1>
+
+<form>
+    <label for="">Nombre </label>
+    <input type="text" name="nombre">
+    <label for="">Exposant</label>
+    <input type="text" name="exposant">
+    <input type="button" value="cube" onClick="cube(this.form)">
+    <input type="button" value="carre" onClick="carre(this.form)">
+    <input type="button" value="puissance" onClick="puissance(this.form)">
+    <input type="button" value="racine" onClick="racine(this.form)">
+    <input type="button" value="premier" onClick="premier(this.form)">
+    
+</form>
+
+    <img src="photo.png" alt="photo">
+
+<script type="text/javascript">
+    function carre(arg) {
+        var a = parseFloat(arg["nombre"]["value"]);
+        var c = a * a;
+        if (isNaN(a) || a == "") {
+            alert("Veuillez entrer un nombre");
+        } else {
+            alert("Le carré de " + a + " est: " + c);
+        }
+    }
+
+    function cube(arg) {
+        var a = parseFloat(arg["nombre"]["value"]);
+        var c = a * a * a;
+        if (isNaN(a) || a == "") {
+            alert("Veuillez entrer un nombre");
+        } else {
+            alert("Le cube de " + a + " est: " + c);
+        }
+    }
+    function puissance(arg) {
+        var a = parseFloat(arg["nombre"]["value"]);
+        var b = parseFloat(arg["exposant"]["value"]);
+        var p = 1;
+        for (var i = 0; i < b; i++) {
+            p *= a;
+        }
+        if (isNaN(a) || isNaN(b) || a == "" || b == "") {
+            alert("Veuillez entrer des nombres");
+        } else {
+            alert(a + " Puissance " + b + " égale: " + p);
+        }
+    }
+
+    function racine(arg) {
+        var a = parseFloat(arg["nombre"]["value"]);
+        var r = Math.sqrt(a);
+        if (isNaN(a) || a == "") {
+            alert("Veuillez entrer un nombre");
+        } else {
+            alert("La racine carrée de " + a + " est: " + r);
+        }
+    }
+    function premier(arg) {
+        var a = parseFloat(arg["nombre"]["value"]);
+        var p = true;
+        if (isNaN(a) || a == "") {
+            alert("Veuillez entrer un nombre");
+        } else {
+            for (var i = 2; i < a; i++) {
+                if (a % i == 0) {
+                    p = false;
+                    break;
+                }
+            }
+            if (p) {
+                alert(a + " est un nombre premier");
+            } else {
+                alert(a + " n'est pas un nombre premier");
+            }
+        }
+    }
+</script>

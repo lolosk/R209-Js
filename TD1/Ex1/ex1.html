@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function quotient(n, d) {
+            var q = 0; 
+            while (n >= d) {
+                n -= d;
+                q++;
+            }
+            return q;
+        }
+
+
+        var n = prompt("Entrez un montant à rendre : ");
+        var d = 10;
+        var bill10 = quotient(n, d);
+        n = n % d;
+        d = 5;
+        var bill5 = quotient(n, d);
+        n = n % d;
+        d = 2;
+        var coin2 = quotient(n, d);
+        n = n % d;
+        d = 1;
+        var coin1 = quotient(n, d);
+
+        alert(bill10 + " Billets de 10 \n" + bill5 + " Billets de 5 \n" + coin2 + " Pièces de 2 \n" + coin1 + " Pièces de 1 ");
+    </script>
+    
+</body>
+</html>

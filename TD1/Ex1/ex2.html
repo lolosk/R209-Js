@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function puissance(a, b) {
+            var p = 1;
+            for (var i = 0; i < b; i++) {
+                p *= a;
+            }
+            return p;
+
+        }
+        var a = prompt("Entrez un nombre");
+        var b = prompt("Entrez un exposant");
+
+        if (isNaN(a) || isNaN(b) || a == "" || b == "") {
+            alert("Veuillez entrer des nombres");
+        } else {
+            alert(a +" Puissance "+ b+" égale: "+puissance(a, b));
+        }
+        //alert(a +" Puissance "+ b+" égale: "+puissance(a, b));
+
+    </script>
+    
+</body>
+</html>

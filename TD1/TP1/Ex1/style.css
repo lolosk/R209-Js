@@ -1,0 +1,26 @@
+html {
+    background-color: rgba(27, 95, 244, 0.411);
+}
+form {
+    background-color: rgba(19, 19, 19, 0.411);
+    padding: 1em;
+    border-radius: 10px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10vh;
+    
+}
+h1 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 3em;  
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

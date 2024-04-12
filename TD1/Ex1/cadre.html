@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="efr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        var sum = 37; // Replace with your desired sum
+
+        var bill10 = Math.floor(sum / 10);
+        sum %= 10;
+
+        var bill5 = Math.floor(sum / 5);
+        sum %= 5;
+
+        var coin2 = Math.floor(sum / 2);
+        sum %= 2;
+
+        var coin1 = sum;
+
+        console.log("Bills of 10: " + bill10);
+        console.log("Bills of 5: " + bill5);
+        console.log("Coins of 2: " + coin2);
+        console.log("Coins of 1: " + coin1);
+
+        alert( bill10 + " Billets de 10 \n" + bill5 +" Billets de 5 \n" + coin2 + " Pièces de 2 \n" + coin1 + " Pièces de 1 ")
+
+    </script>
+    
+</body>
+</html>

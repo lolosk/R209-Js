@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="meteop.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>R209 TP2</title>
+</head>
+<body>
+    <style>
+        
+    </style>
+</head>
+<body>
+  <h1>TP2 R209 : Exercice 2</h1>
+  
+  <form>
+    <h3>La météo de lolo</h3>
+    <input type="text" name="ville" onkeydown="if(event.keyCode === 13) { requete(this.form); return false; }">
+    <input type="button" value="ville" onClick="requete(this.form)">
+
+
+
+  </form>
+  <table>
+      <tr id="tr1">
+          <td>Ville</td>
+      </tr>
+      <tr id="tr2">
+          <td>Temp&eacute;rature</td>
+      </tr>
+      <tr id="tr3">
+          <td>Pression</td>
+      </tr>
+      <tr id="tr4">
+          <td>Humidit&eacute;</td>
+      </tr>
+      <tr id="tr5">
+          <td>Vitesse du vent</td>
+      </tr>
+      <tr id="tr6">
+          <td>Direction du vent</td>
+      </tr>
+  </table>
+
+  <img src="https://i.makeagif.com/media/9-18-2015/wix9pK.gif" alt="imgmeteo" id="meteoimg">
+</body>
+</html>
