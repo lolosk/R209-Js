@@ -1,6 +1,6 @@
 # Ressource R209 : Apprentissage de JavaScript
 
-Bienvenue dans la ressource R209 dédiée à l'apprentissage de JavaScript. Cette ressource est conçue pour vous guider à travers les concepts fondamentaux de JavaScript via trois travaux pratiques (TP) et divers exercices pratiques, tels que l'affichage de la météo et la création de tableaux d'équipes de football.
+Bienvenue dans la ressource R209 dédiée à l'apprentissage de JavaScript. Cette ressource m'a guider à travers les concepts fondamentaux de JavaScript via trois travaux pratiques (TP) et divers exercices pratiques, tels que l'affichage de la météo et la création de tableaux d'équipes de football.
 
 ## Contenu de la ressource
 
